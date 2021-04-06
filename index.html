@@ -17,6 +17,147 @@
 </head>
 
 <body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="#" class="logo">
+        <img src="images/favicon.png" alt="">
+        Aurora
+      </a>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">My work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home">
+    <h1 class="home__title">안녕하세요.<br />저는 프론트엔드를 꿈꾸는 개발자입니다.</h1>
+    <h4 class="home__description">프론트엔드 개발자이지만 백엔드 개발에도 관심이 있어 나중에는 node.js에 대해서도 공부를 할 계획입니다.</h4>
+    <button class="home__button">CONTACT ME</button>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h1 class="about__title">About Me</h1>
+    <p class="about__paragraph">
+      6개월 동안 SI회사에서 서버 개발, 3개월 인턴동안에 퍼블리셔로 일한 경험이 있습니다.
+      SI회사에서는 Java/Spring을 이용하여 OpenAPI 제공과 다양한 업체들의 실시간 데이터를 받기 위해 Kafka를 사용하였습니다.
+      퍼블리셔로 일하는 동안에는 html과 css, animate cc를 이용하여 개발하였습니다.
+    </p>
+    <div class="about__contents">
+      <div class="content">
+        <div class="content__icon">
+          <i class="fab fa-html5"></i>
+        </div>
+        <div class="content__title">
+          Front-End
+        </div>
+        <div class="content__description">HTML, CSS, Javascript</div>
+      </div>
+      <div class="content">
+        <div class="content__icon">
+          <i class="fab fa-react"></i>
+        </div>
+        <div class="content__title">
+          SPA Framework
+        </div>
+        <div class="content__description">React</div>
+      </div>
+      <div class="content">
+        <div class="content__icon">
+          <i class="fas fa-server"></i>
+        </div>
+        <div class="content__title">
+          Back-End
+        </div>
+        <div class="content__description">Java, Spring Boot, MySQL</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h1 class="skills__title">Skills</h1>
+    <h2 class="skills__subtitle">Skills & Attributes</h2>
+    <p class="skills__paragraph"></p>
+    <div class="skillset">
+      <div class="skillset__left">
+        <h3 class="skillset__title">Skills</h3>
+        <div class="skillset__frontend">
+          <h3 class="skillset__title">Front-End</h3>
+          <ul>
+            <li>HTML</li>
+          </ul>
+        </div>
+        <div class="skillset__backend">
+          <h3 class="skillset__title">Back-End</h3>
+          <ul>
+            <li>Java</li>
+          </ul>
+        </div>
+      </div>
+      <div class="skillset_right">
+        <div class="skillset__tools">
+          <h3 class="skillset__title">Tools</h3>
+          <ul>
+            <li>VS Code</li>
+          </ul>
+        </div>
+        <div class="skillset__etc">
+          <h3 class="skillset__title">Etc</h3>
+          <ul>
+            <li>Git/Github</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work">
+    <h1 class="work__title">My work</h1>
+    <h3 class="work__subtitle">projects</h3>
+    <div class="work__categories">
+      <button class="category__btn">All<span class="category__count">2</span></button>
+      <button class="category__btn">Front-End<span class="category__count">1</span></button>
+      <button class="category__btn">Back-End<span class="category__count">1</span></button>
+    </div>
+    <div class="work__projects">
+      <a href="https://github.com/azurealstn/my-portfolio" class="project" target="_blank">
+        <img src="images/favicon.png" alt="">
+        <div class="project__description">
+          <h3>Project</h3>
+          <span>My Project with HTML, CSS</span>
+        </div>
+      </a>
+      <a href="https://github.com/azurealstn/my-portfolio" class="project" target="_blank">
+        <img src="images/favicon.png" alt="">
+        <div class="project__description">
+          <h3>Project</h3>
+          <span>My Project with HTML, CSS</span>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section id="contact">
+    <h1 class="contact__title">CONTACT</h1>
+    <h3 class="contact__email">azurealstn@naver.com</h3>
+    <div class="contact__links">
+      <a href="https://github.com/azurealstn/my-portfolio" class="link" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://github.com/azurealstn/my-portfolio" class="link" target="_blank">
+        <i class="fab fa-blogger"></i>
+      </a>
+    </div>
+  </section>
 </body>
 
 </html>
