@@ -42,7 +42,7 @@
   <section id="home">
     <h1 class="home__title">안녕하세요.<br />저는 프론트엔드 개발자입니다.</h1>
     <p class="home__description">프론트엔드 개발자이지만 백엔드에도 관심이 있어 Node.js를 공부하고 있습니다.</p>
-    <button class="home__button">CONTACT ME</button>
+    <button class="home__button" data-link="#contact">CONTACT ME</button>
   </section>
 
   <!-- About -->
@@ -132,12 +132,12 @@
       <h1 class="work__title">🎨 My work</h1>
       <h3 class="work__subtitle">projects</h3>
       <div class="work__categories">
-        <button class="category__btn">All<span class="category__count">2</span></button>
-        <button class="category__btn">Front-End<span class="category__count">1</span></button>
-        <button class="category__btn">Back-End<span class="category__count">1</span></button>
+        <button class="category__btn active" data-key="*">All<span class="category__count">2</span></button>
+        <button class="category__btn" data-key="front">Front-End<span class="category__count">1</span></button>
+        <button class="category__btn" data-key="back">Back-End<span class="category__count">1</span></button>
       </div>
       <div class="work__projects">
-        <a href="https://github.com/azurealstn/my-portfolio" class="project" target="_blank">
+        <a href="https://github.com/azurealstn/my-portfolio" class="project" target="_blank" data-value="front">
           <img src="images/favicon.png" alt="">
           <div class="project__description">
             <h3>Project</h3>
@@ -146,7 +146,7 @@
             <span><i class="fas fa-project-diagram"></i> 포트폴리오</span>
           </div>
         </a>
-        <a href="https://github.com/azurealstn/my-portfolio" class="project" target="_blank">
+        <a href="https://github.com/azurealstn/my-portfolio" class="project" target="_blank" data-value="back">
           <img src="images/favicon.png" alt="">
           <div class="project__description">
             <h3>Project</h3>
@@ -173,6 +173,11 @@
       2021 Minsu - All rights reverved
     </p>
   </section>
+
+  <!-- Arrow up -->
+  <button class="arrow-up" data-link="#home">
+    <i class="fas fa-arrow-alt-circle-up"></i>
+  </button>
 </body>
 
 </html>
