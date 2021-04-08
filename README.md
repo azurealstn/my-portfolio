@@ -20,7 +20,7 @@ IE에서는 지원되지 않습니다.
 
 ### 마크업 구조
 
-- ![캡처](https://user-images.githubusercontent.com/55525868/114045753-3b8be280-98c3-11eb-99f6-2ac4b491eb4c.PNG)
+![캡처](https://user-images.githubusercontent.com/55525868/114045753-3b8be280-98c3-11eb-99f6-2ac4b491eb4c.PNG)
 
 <br/>
 <br/>
