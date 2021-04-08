@@ -93,7 +93,15 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  transition: all var(--animation-duration) ease;
+  z-index: 1;
+}
+.navbar__dark {
   background-color: var(--color-blue);
+  opacity: 0.8;
 }
 .navbar__logo {
   display: flex;
@@ -124,9 +132,17 @@ p {
   background-color: var(--color-lightBlue);
   border-radius: var(--size-border);
 }
-.navbar__menu li a {
+.navbar__menu li {
   color: var(--color-white);
   font-weight: var(--weight-semi-bold);
+}
+.navbar__toggleBtn {
+  position: absolute;
+  right: 32px;
+  font-size: var(--font-medium);
+  color: var(--color-white);
+  display: none;
+  top: 24px;
 }
 
 /* Home */
@@ -210,6 +226,10 @@ p {
   color: var(--color-htmlIcon);
   transform: rotateY(70deg);
 }
+.content__icon:hover .fa-react {
+  color: skyblue;
+  transform: rotateY(70deg);
+}
 
 /* Skills */
 #skills {
@@ -231,6 +251,7 @@ p {
   display: flex;
   justify-content: center;
   margin-right: 30px;
+  margin-bottom: 60px;
 }
 .skills__contents {
   list-style: disc outside;
@@ -238,6 +259,13 @@ p {
 }
 .skills__contents li {
   margin: 10px;
+}
+.skills__container-01 {
+  margin-right: 37px;
+}
+.skills__container-02 {
+  margin-right: 69px;
+  margin-bottom: 0;
 }
 
 /* Work */
@@ -339,4 +367,30 @@ p {
 .contact__links i:hover {
   transform: scale(1.2);
   color: var(--color-orange);
+}
+
+/* responsive web (max-width: 780px) */
+@media screen and (max-width: 780px) {
+  .navbar__toggleBtn {
+    display: block;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .about__contents {
+    flex-direction: column;
+  }
+  .content {
+    margin-bottom: var(--font-large);
+  }
+  .skillset {
+    flex-direction: column;
+  }
 }

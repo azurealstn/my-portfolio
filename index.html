@@ -25,19 +25,23 @@
         <span>MinSu</span>
       </a>
       <ul class="navbar__menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">My work</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="active" data-link="#home">Home</li>
+        <li data-link="#about">About</li>
+        <li data-link="#skills">Skills</li>
+        <li data-link="#work">My work</li>
+        <li data-link="#contact">Contact</li>
       </ul>
+      <!-- Toggle Button -->
+      <button class="navbar__toggleBtn">
+        <i class="fas fa-hamburger"></i>
+      </button>
     </nav>
   </header>
 
   <!-- Home -->
   <section id="home">
-    <h1 class="home__title">안녕하세요.<br />저는 백엔드 개발자입니다.</h1>
-    <p class="home__description">백엔드 개발자이지만 프론트에도 관심이 있고 트래픽이 많은 개발을 해보고 싶습니다.</p>
+    <h1 class="home__title">안녕하세요.<br />저는 프론트엔드 개발자입니다.</h1>
+    <p class="home__description">프론트엔드 개발자이지만 백엔드에도 관심이 있어 Node.js를 공부하고 있습니다.</p>
     <button class="home__button">CONTACT ME</button>
   </section>
 
@@ -57,15 +61,6 @@
     <div class="about__contents">
       <div class="content">
         <div class="content__icon">
-          <i class="fas fa-server"></i>
-        </div>
-        <h3 class="content__title">
-          Back-End
-        </h3>
-        <div class="content__description">Java, Spring Boot, MySQL</div>
-      </div>
-      <div class="content">
-        <div class="content__icon">
           <i class="fab fa-html5"></i>
         </div>
         <h3 class="content__title">
@@ -82,6 +77,15 @@
         </h3>
         <div class="content__description">React</div>
       </div>
+      <div class="content">
+        <div class="content__icon">
+          <i class="fas fa-server"></i>
+        </div>
+        <h3 class="content__title">
+          Back-End
+        </h3>
+        <div class="content__description">Java, Spring Boot, MySQL</div>
+      </div>
     </div>
   </section>
 
@@ -96,6 +100,12 @@
       </p>
       <div class="skillset">
         <div class="skills__container">
+          <h2 class="skills__header">Front-End</h2>
+          <ul class="skills__contents">
+            <li>HTML, CSS, Javascript(ES6)</li>
+          </ul>
+        </div>
+        <div class="skills__container skills__container-01">
           <h2 class="skills__header">Back-End</h2>
           <ul class="skills__contents">
             <li>Java</li>
@@ -105,13 +115,7 @@
             <li>MySQL</li>
           </ul>
         </div>
-        <div class="skills__container">
-          <h2 class="skills__header">Front-End</h2>
-          <ul class="skills__contents">
-            <li>HTML, CSS, Javascript(ES6)</li>
-          </ul>
-        </div>
-        <div class="skills__container">
+        <div class="skills__container skills__container-02">
           <h2 class="skills__header">Etc</h2>
           <ul class="skills__contents">
             <li>Git/Github</li>
@@ -129,8 +133,8 @@
       <h3 class="work__subtitle">projects</h3>
       <div class="work__categories">
         <button class="category__btn">All<span class="category__count">2</span></button>
-        <button class="category__btn">Back-End<span class="category__count">1</span></button>
         <button class="category__btn">Front-End<span class="category__count">1</span></button>
+        <button class="category__btn">Back-End<span class="category__count">1</span></button>
       </div>
       <div class="work__projects">
         <a href="https://github.com/azurealstn/my-portfolio" class="project" target="_blank">
@@ -155,7 +159,7 @@
     </div>
   </section>
   <section id="contact">
-    <h1 class="contact__title">CONTACT</h1>
+    <h1 class="contact__title">🌱 CONTACT</h1>
     <h3 class="contact__email">azurealstn@naver.com</h3>
     <div class="contact__links">
       <a href="https://github.com/azurealstn/my-portfolio" class="link" target="_blank">
