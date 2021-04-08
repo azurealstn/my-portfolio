@@ -64,6 +64,7 @@ section {
   padding: 50px;
   text-align: center;
   margin: auto;
+  padding-top: 80px;
 }
 .section__container {
   max-width: 1200px;
@@ -151,7 +152,7 @@ p {
 /* Home */
 #home {
   background: url('images/background.png') no-repeat center/cover;
-  height: 50vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,6 +175,10 @@ p {
   border-radius: var(--size-border);
   color: var(--color-white);
 }
+.home__button:hover {
+  color: var(--color-orange);
+  border: 2px solid var(--color-orange);
+}
 
 /* About */
 .about__title {
@@ -182,6 +187,11 @@ p {
 .about__paragraph {
   display: flex;
   justify-content: center;
+  max-width: 903px;
+  margin: auto;
+}
+.about__paragraph-02 {
+  margin-top: 20px;
 }
 .paragraph__title {
   margin-right: 100px;
@@ -189,7 +199,7 @@ p {
 .about__paragraph li {
   list-style: disc outside;
   margin: 10px;
-  text-align: left;
+  text-align: justify;
 }
 .strong {
   background-color: skyblue;
@@ -204,6 +214,7 @@ p {
   display: flex;
   justify-content: space-around;
   margin: 80px 0;
+  margin-bottom: 20px;
 }
 .content__icon {
   width: 170px;
@@ -238,6 +249,7 @@ p {
 #skills {
   background-color: var(--color-darkGray);
   color: var(--color-white);
+  padding-bottom: 0;
 }
 .skillset {
   display: flex;
@@ -249,12 +261,24 @@ p {
 }
 .skills__header {
   margin-right: 30px;
+  width: 120px;
+  text-align: left;
 }
 .skills__container {
   display: flex;
   justify-content: center;
   margin-right: 30px;
   margin-bottom: 60px;
+  width: 240px;
+}
+.skills__container-03 {
+  margin-right: 0;
+}
+.skills__container-01 .skills__contents {
+  margin-left: 5px;
+}
+.skills__container-03 .skills__contents {
+  margin-right: 34px;
 }
 .skills__contents {
   list-style: disc outside;
@@ -263,23 +287,21 @@ p {
 .skills__contents li {
   margin: 10px;
 }
-.skills__container-01 {
-  margin-right: 37px;
-}
-.skills__container-02 {
-  margin-right: 69px;
-  margin-bottom: 0;
-}
+
 
 /* Work */
+#work {
+  padding: 80px;
+}
 .category__btn {
   border: 1px solid var(--color-categoryBtnRadius);
   border-radius: var(--size-border);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  position: relative;
 }
 .work__categories {
-  margin: 40px;
+  margin: 40px auto 20px auto;
 }
 .category__btn.active,
 .category__btn:hover {
@@ -289,7 +311,7 @@ p {
 .category__btn.active .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 0;
+  top: 6px;
 }
 .category__count {
   width: 24px;
@@ -298,9 +320,9 @@ p {
   border-radius: 50%;
   background-color: var(--color-orange);
   display: inline-block;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 8px;
+  right: 16px;
   opacity: 0;
   transition: all var(--animation-duration) ease;
 }
@@ -361,6 +383,7 @@ p {
 #contact {
   background-color: var(--color-contact);
   color: var(--color-white);
+  padding-top: 20px;
 }
 .contact__title {
   margin: var(--font-medium) 0;
@@ -400,20 +423,50 @@ p {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-contact);
   }
+
   .navbar__menu {
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: none;
   }
+  .navbar__menu.on {
+    display: inline-block;
+  }
+  #about {
+    padding: 16px;
+  }
+  .about__paragraph {
+    flex-direction: column;
+  }
+  .paragraph__title {
+    margin: 0;
+  }
   .about__contents {
     flex-direction: column;
+    margin: 40px 0;
+    margin-bottom: 0px;
   }
   .content {
     margin-bottom: var(--font-large);
   }
   .skillset {
     flex-direction: column;
+    align-items: center;
+  }
+  .skills__container-03 {
+    margin-right: 30px;
+  }
+  .category__btn {
+    padding: 8px 44px;
+    margin: 4px;
+    width: 190px;
+  }
+  .arrow-up {
+    bottom: 15px;
+    right: 15px;
+    font-size: 40px;
   }
 }

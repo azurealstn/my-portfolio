@@ -40,22 +40,35 @@
 
   <!-- Home -->
   <section id="home">
-    <h1 class="home__title">안녕하세요.<br />저는 프론트엔드 개발자입니다.</h1>
-    <p class="home__description">프론트엔드 개발자이지만 백엔드에도 관심이 있어 Node.js를 공부하고 있습니다.</p>
+    <h1 class="home__title">안녕하세요. 🚗<br />저는 백엔드 개발자입니다.</h1>
+    <p class="home__description">이제 신입 개발자이지만 실력을 쌓아서 미래에는 해외에서 일해보는 것이 목표입니다.</p>
     <button class="home__button" data-link="#contact">CONTACT ME</button>
   </section>
 
   <!-- About -->
   <section id="about" class="section__container">
     <h1 class="about__title">👨‍💼 About Me</h1>
-    <div class="about__paragraph">
+    <div class="about__paragraph about__paragraph-01">
       <h2 class="paragraph__title">Introduce</h2>
       <ul class="paragraph__list">
         <li>안녕하세요! 신입 백엔드 개발자 채민수입니다.</li>
         <li>개발자가 되기 위해서는 <span class="strong">꾸준함</span>과 <span class="strong">반복 숙달</span>이 중요하다고 여깁니다.</li>
         <li>공부한 내용을 정리하기 위해 <a href="https://github.com/azurealstn/TIL" target="_blank" class="til">TIL 저장소</a>를 통해 기록을
           남기고 있습니다.</li>
-        <li>주로 인프런을 통해 공부를 하며, 모르는 부분이 나오면 구글링하거나 공식문서를 참고합니다.</li>
+        <li>주로 인프런을 통해 공부하며, 모르는 부분이 나오면 구글링하거나 공식문서를 참고합니다.</li>
+      </ul>
+    </div>
+    <div class="about__paragraph about__paragraph-02">
+      <h2 class="paragraph__title">Experience</h2>
+      <ul class="paragraph__list">
+        <li>SI 회사에서 6개월, 퍼블리셔로 수습기간 3개월 일한 경험이 있습니다.</li>
+        <li>SI 회사에서는 여러 업체들의 실시간 데이터를 처리하기 위해 Kafka를 이용했습니다.</li>
+        <li><span style="font-weight: bold;">에러 해결:</span> 카프카 서버가 다운되서 로그를 보다가 한 업체에서 데이터를 Producer할 때 옵션을 <span
+            class="strong">acks=0</span>로 보낸 것이 확인되어 해당 업체에 <span class="strong">acks=1</span>로 수정하여 해결 완료. <a
+            href="https://www.popit.kr/%ec%b9%b4%ed%94%84%ec%b9%b4-%ec%9a%b4%ec%98%81%ec%9e%90%ea%b0%80-%eb%a7%90%ed%95%98%eb%8a%94-%ec%b9%b4%ed%94%84%ec%b9%b4-%ec%84%9c%eb%b2%84-%ec%8b%a4%ec%a0%84-%eb%a1%9c%ea%b7%b8-%eb%b6%84%ec%84%9d/"
+            target="_blank">(참고 사이트)</a> <br /><span style="color: gray;">acks=0은 속도는 빠르지만 데이터를 보낼 때 일부
+            손실될 수도 있음을 의미.</span> </li>
+        <li>퍼블리셔로 일하는 동안에는 주로 HTML, CSS로 페이지 작업을 했습니다.</li>
       </ul>
     </div>
     <div class="about__contents">
@@ -96,16 +109,16 @@
       <p class="skills__paragraph">
         새로운 것을 배우는데 거부감이 없고, 자기 관리를 위해 헬스를 다니고 있습니다. (수영도 좋아합니다.)
         시간 약속을 준수하며, 협업을 통해 팀원 모두가 성장하는 것을 지향합니다.
-        문제 해결 능력을 위해 알고리즘 공부를 하고 있으며, 혼자서 충분히 고민한 다음 그래도 모르면 답을 찾아냅니다.
+        Promblem Solving Skill 향상을 위해 혼자서 먼저 찾아보고, 시도해봅니다.
       </p>
       <div class="skillset">
-        <div class="skills__container">
+        <div class="skills__container skills__container-01">
           <h2 class="skills__header">Front-End</h2>
           <ul class="skills__contents">
             <li>HTML, CSS, Javascript(ES6)</li>
           </ul>
         </div>
-        <div class="skills__container skills__container-01">
+        <div class="skills__container skills__container-02">
           <h2 class="skills__header">Back-End</h2>
           <ul class="skills__contents">
             <li>Java</li>
@@ -115,7 +128,7 @@
             <li>MySQL</li>
           </ul>
         </div>
-        <div class="skills__container skills__container-02">
+        <div class="skills__container skills__container-03">
           <h2 class="skills__header">Etc</h2>
           <ul class="skills__contents">
             <li>Git/Github</li>
@@ -160,7 +173,7 @@
   </section>
   <section id="contact">
     <h1 class="contact__title">🌱 CONTACT</h1>
-    <h3 class="contact__email">azurealstn@naver.com</h3>
+    <h3 class="contact__email">azurealstn33@gmail.com</h3>
     <div class="contact__links">
       <a href="https://github.com/azurealstn/my-portfolio" class="link" target="_blank">
         <i class="fab fa-github"></i>
