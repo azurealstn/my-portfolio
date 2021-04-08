@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>채민수 이력서</title>
   <meta name="description" content="This is MinSu's Portfolio!">
   <meta name="author" content="MinSu Chae">
   <link rel="icon" href="images/favicon.png" type="image/png">
@@ -19,101 +19,103 @@
 <body>
   <!-- Header -->
   <header>
-    <nav>
-      <a href="#" class="logo">
+    <nav class="navbar">
+      <a href="#" class="navbar__logo">
         <img src="images/favicon.png" alt="">
-        Aurora
+        <span>MinSu</span>
       </a>
-      <div class="menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">My work</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="navbar__menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">My work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- Home -->
   <section id="home">
-    <h1 class="home__title">안녕하세요.<br />저는 프론트엔드를 꿈꾸는 개발자입니다.</h1>
-    <h4 class="home__description">프론트엔드 개발자이지만 백엔드 개발에도 관심이 있어 나중에는 node.js에 대해서도 공부를 할 계획입니다.</h4>
+    <h1 class="home__title">안녕하세요.<br />저는 백엔드 개발자입니다.</h1>
+    <p class="home__description">백엔드 개발자이지만 프론트에도 관심이 있고 트래픽이 많은 개발을 해보고 싶습니다.</p>
     <button class="home__button">CONTACT ME</button>
   </section>
 
   <!-- About -->
-  <section id="about">
-    <h1 class="about__title">About Me</h1>
-    <p class="about__paragraph">
-      6개월 동안 SI회사에서 서버 개발, 3개월 인턴동안에 퍼블리셔로 일한 경험이 있습니다.
-      SI회사에서는 Java/Spring을 이용하여 OpenAPI 제공과 다양한 업체들의 실시간 데이터를 받기 위해 Kafka를 사용하였습니다.
-      퍼블리셔로 일하는 동안에는 html과 css, animate cc를 이용하여 개발하였습니다.
-    </p>
+  <section id="about" class="section__container">
+    <h1 class="about__title">👨‍💼 About Me</h1>
+    <div class="about__paragraph">
+      <h2 class="paragraph__title">Introduce</h2>
+      <ul class="paragraph__list">
+        <li>안녕하세요! 신입 백엔드 개발자 채민수입니다.</li>
+        <li>개발자가 되기 위해서는 <span class="strong">꾸준함</span>과 <span class="strong">반복 숙달</span>이 중요하다고 여깁니다.</li>
+        <li>공부한 내용을 정리하기 위해 <a href="https://github.com/azurealstn/TIL" target="_blank" class="til">TIL 저장소</a>를 통해 기록을
+          남기고 있습니다.</li>
+        <li>주로 인프런을 통해 공부를 하며, 모르는 부분이 나오면 구글링하거나 공식문서를 참고합니다.</li>
+      </ul>
+    </div>
     <div class="about__contents">
+      <div class="content">
+        <div class="content__icon">
+          <i class="fas fa-server"></i>
+        </div>
+        <h3 class="content__title">
+          Back-End
+        </h3>
+        <div class="content__description">Java, Spring Boot, MySQL</div>
+      </div>
       <div class="content">
         <div class="content__icon">
           <i class="fab fa-html5"></i>
         </div>
-        <div class="content__title">
+        <h3 class="content__title">
           Front-End
-        </div>
+        </h3>
         <div class="content__description">HTML, CSS, Javascript</div>
       </div>
       <div class="content">
         <div class="content__icon">
           <i class="fab fa-react"></i>
         </div>
-        <div class="content__title">
+        <h3 class="content__title">
           SPA Framework
-        </div>
+        </h3>
         <div class="content__description">React</div>
-      </div>
-      <div class="content">
-        <div class="content__icon">
-          <i class="fas fa-server"></i>
-        </div>
-        <div class="content__title">
-          Back-End
-        </div>
-        <div class="content__description">Java, Spring Boot, MySQL</div>
       </div>
     </div>
   </section>
 
   <!-- Skills -->
   <section id="skills">
-    <h1 class="skills__title">Skills</h1>
-    <h2 class="skills__subtitle">Skills & Attributes</h2>
-    <p class="skills__paragraph"></p>
-    <div class="skillset">
-      <div class="skillset__left">
-        <h3 class="skillset__title">Skills</h3>
-        <div class="skillset__frontend">
-          <h3 class="skillset__title">Front-End</h3>
-          <ul>
-            <li>HTML</li>
-          </ul>
-        </div>
-        <div class="skillset__backend">
-          <h3 class="skillset__title">Back-End</h3>
-          <ul>
+    <div class="section__container">
+      <h1 class="skills__title">💡 Skills</h1>
+      <p class="skills__paragraph">
+        새로운 것을 배우는데 거부감이 없고, 자기 관리를 위해 헬스를 다니고 있습니다. (수영도 좋아합니다.)
+        시간 약속을 준수하며, 협업을 통해 팀원 모두가 성장하는 것을 지향합니다.
+        문제 해결 능력을 위해 알고리즘 공부를 하고 있으며, 혼자서 충분히 고민한 다음 그래도 모르면 답을 찾아냅니다.
+      </p>
+      <div class="skillset">
+        <div class="skills__container">
+          <h2 class="skills__header">Back-End</h2>
+          <ul class="skills__contents">
             <li>Java</li>
+            <li>Spring Boot, Spring MVC</li>
+            <li>Gradle</li>
+            <li>Intellij, Eclipse, VS Code</li>
+            <li>MySQL</li>
           </ul>
         </div>
-      </div>
-      <div class="skillset_right">
-        <div class="skillset__tools">
-          <h3 class="skillset__title">Tools</h3>
-          <ul>
-            <li>VS Code</li>
+        <div class="skills__container">
+          <h2 class="skills__header">Front-End</h2>
+          <ul class="skills__contents">
+            <li>HTML, CSS, Javascript(ES6)</li>
           </ul>
         </div>
-        <div class="skillset__etc">
-          <h3 class="skillset__title">Etc</h3>
-          <ul>
+        <div class="skills__container">
+          <h2 class="skills__header">Etc</h2>
+          <ul class="skills__contents">
             <li>Git/Github</li>
+            <li>Slack</li>
           </ul>
         </div>
       </div>
@@ -122,28 +124,34 @@
 
   <!-- Work -->
   <section id="work">
-    <h1 class="work__title">My work</h1>
-    <h3 class="work__subtitle">projects</h3>
-    <div class="work__categories">
-      <button class="category__btn">All<span class="category__count">2</span></button>
-      <button class="category__btn">Front-End<span class="category__count">1</span></button>
-      <button class="category__btn">Back-End<span class="category__count">1</span></button>
-    </div>
-    <div class="work__projects">
-      <a href="https://github.com/azurealstn/my-portfolio" class="project" target="_blank">
-        <img src="images/favicon.png" alt="">
-        <div class="project__description">
-          <h3>Project</h3>
-          <span>My Project with HTML, CSS</span>
-        </div>
-      </a>
-      <a href="https://github.com/azurealstn/my-portfolio" class="project" target="_blank">
-        <img src="images/favicon.png" alt="">
-        <div class="project__description">
-          <h3>Project</h3>
-          <span>My Project with HTML, CSS</span>
-        </div>
-      </a>
+    <div class="section__container">
+      <h1 class="work__title">🎨 My work</h1>
+      <h3 class="work__subtitle">projects</h3>
+      <div class="work__categories">
+        <button class="category__btn">All<span class="category__count">2</span></button>
+        <button class="category__btn">Back-End<span class="category__count">1</span></button>
+        <button class="category__btn">Front-End<span class="category__count">1</span></button>
+      </div>
+      <div class="work__projects">
+        <a href="https://github.com/azurealstn/my-portfolio" class="project" target="_blank">
+          <img src="images/favicon.png" alt="">
+          <div class="project__description">
+            <h3>Project</h3>
+            <h4>My Project with HTML, CSS</h4>
+            <span><i class="fas fa-code"></i> 사용 언어: HTML, CSS, JS</span>
+            <span><i class="fas fa-project-diagram"></i> 포트폴리오</span>
+          </div>
+        </a>
+        <a href="https://github.com/azurealstn/my-portfolio" class="project" target="_blank">
+          <img src="images/favicon.png" alt="">
+          <div class="project__description">
+            <h3>Project</h3>
+            <h4>My Project with HTML, CSS</h4>
+            <span><i class="fas fa-code"></i> 사용 언어: HTML, CSS, JS</span>
+            <span><i class="fas fa-project-diagram"></i> 포트폴리오</span>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
   <section id="contact">
@@ -157,6 +165,9 @@
         <i class="fab fa-blogger"></i>
       </a>
     </div>
+    <p class="contact__rights">
+      2021 Minsu - All rights reverved
+    </p>
   </section>
 </body>
 
