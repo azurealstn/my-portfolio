@@ -240,7 +240,7 @@ p {
   color: var(--color-htmlIcon);
   transform: rotateY(70deg);
 }
-.content__icon:hover .fa-react {
+.content__icon:hover .fa-github {
   color: skyblue;
   transform: rotateY(70deg);
 }
